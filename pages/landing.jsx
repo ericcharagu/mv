@@ -252,12 +252,12 @@ const MatatuVisionLanding = () => {
               description: "Monitor your entire fleet's performance, location, and status in real-time.",
               stats: ["Live vehicle tracking", "Instant alerts & notifications"]
             },
-            {
+            /* {
               icon: <Shield />,
               title: "Compliance & Security",
               description: "Ensure regulatory compliance and maintain secure records of all operations.",
               stats: ["NTSA compliance ready", "Secure data storage"]
-            }
+            } */
           ].map((benefit, index) => (
             <motion.div
               key={index}
