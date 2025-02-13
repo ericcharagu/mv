@@ -12,11 +12,12 @@ export default function StageContBar({ data }) {
                     data={data}
                     keys={['stage1', 'stage2', 'stage3', 'stage4']}
                     indexBy="reg"
-                    margin={{ top: 20, right: 130, bottom: 50, left: 60 }}
+                    margin={{ top: 20, right: 80, bottom: 70, left: 60 }}
                     padding={0.3}
                     valueScale={{ type: 'linear' }}
                     colors={{ scheme: 'nivo' }}
                     stacked={true}
+                    labelSkipHeight={9}
                     axisLeft={{
                       tickSize: 5,
                       tickPadding: 5,
@@ -25,6 +26,7 @@ export default function StageContBar({ data }) {
                       legendPosition: 'middle',
                       legendOffset: -40
                     }}
+                    axisBottom={{tickRotation:60,}}
                     legends={[{
                       dataFrom: 'keys',
                       anchor: 'bottom-right',

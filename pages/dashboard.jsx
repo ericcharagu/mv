@@ -143,7 +143,7 @@ function DashBoard() {
   const latestStats = dummy_data.Stats[dummy_data.Stats.length - 1];
 
   return (
-    <>
+    < div className='container'>
       <Helmet>
         <title>Matatu Vision AI</title>
       </Helmet>
@@ -156,6 +156,8 @@ function DashBoard() {
           transition={{ duration: 0.5 }}
         >
           <Row className="mb-4">
+          <Typography variant="h5" sx={{ fontWeight: 600, width:"auto" }} gutterBottom>
+          Daily Summary</Typography>
            <DailySummaryCard data={dummy_data.Stats}/>
           </Row>
         </motion.div>
@@ -167,6 +169,8 @@ function DashBoard() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Row className="mb-4">
+          <Typography variant="h5" sx={{ fontWeight: 600 }} gutterBottom>
+          Monthly Summary</Typography>
            <MonthlySummaryCard data={dummy_data.Stats}/>
           </Row>
         </motion.div>
@@ -177,7 +181,7 @@ function DashBoard() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Row className="mb-4" style={{display:"flex", flexWrap:"nowrap"}}>
+          <Row className="mb-4" id="lineChartDiv">
             <Col md={6}>
               <Card className="dashboard-card">
                 <Typography variant="h6" className="mb-3">Expected Revenue Trend</Typography>
@@ -265,7 +269,7 @@ function DashBoard() {
           </Row>
         </motion.div>
       </Container>
-    </>
+    </div>
   );
 }
 

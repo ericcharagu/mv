@@ -85,7 +85,7 @@ const MatatuVisionLanding = () => {
             animate={{ opacity: 1, y: 0 }}
             className="main-heading"
           >
-            Track. Optimize. Grow.
+            Count. Optimize. Grow.
           </motion.h1>
           <motion.div 
             className="subheading-wrapper"
@@ -94,7 +94,7 @@ const MatatuVisionLanding = () => {
             transition={{ delay: 0.3 }}
           >
             <h2 className="subheading">
-              Revolutionizing Matatu Operations with AI-Powered <span className="highlight">DeepTrack</span> Technology
+              Revolutionizing Matatu Operations with AI-Powered <span className="highlight">DeepSort</span> Technology
             </h2>
           </motion.div>
         </div>
@@ -155,7 +155,7 @@ const MatatuVisionLanding = () => {
             <div className="analytics-card">
               <h3>Daily Revenue Tracking</h3>
               <div className="chart-container">
-              <Row className="mt-4">
+              <Row className="mt-4" id="chartContainerRow">
         <Col md={8}>
           <ResponsiveContainer width="100%" height={400}>
             <LineChart
@@ -231,7 +231,7 @@ const MatatuVisionLanding = () => {
 
       {/* Benefits Section */}
       <section className="benefits-section">
-        <h2>Why Choose DeepTrack?</h2>
+        <h2>Why Choose Matatu Vision AI?</h2>
         <div className="benefits-grid">
           {[
             {

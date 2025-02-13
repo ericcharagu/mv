@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 import { Col, Row } from 'react-bootstrap';
-
+import "./vehicleCont.css"
 // Sample data
 const dailyPassengerCount = [
   { day: 'Monday', passengers: 1200 },
@@ -31,8 +31,8 @@ const revenueCollected = [
 
 const MatatuTables = () => {
   return (
-    <div className='container-fluid'>
-        <Row>
+    <div className='container-fluid' id="tablesDiv">
+        <Row id="tablesRow">
             <Col>
               {/* Table 1: Daily Passenger Count Total */}
       <Typography variant="h6" gutterBottom>

@@ -7,7 +7,7 @@ import {
   Button,useTheme, 
   Typography,
 } from "@mui/material";
-
+import "./summary.css"
 export default function MonthlySummaryCard({ data }) {  
 const momRev = ((data[4].total_rev - data[3].total_rev) / data[3].total_rev) * 100;
 const momCosts = ((data[4].total_costs - data[3].total_costs) / data[3].total_costs) * 100;
@@ -17,7 +17,8 @@ const momProfit=((profitMargin-prevPm)/prevPm)*100
 //const momRev = ((data[1].total_rev - data[0].total_rev) / data[0].total_rev) * 100;
 const theme = useTheme();
 return (
-    <div className="cardDiv" style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly"}}>
+    <div className="cardDiv">
+      
       <Box sx={{ minWidth: 275 }}>
         <Card  variant="outlined" 
         sx={{ 

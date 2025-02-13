@@ -1,5 +1,6 @@
 import React from 'react';
 import PageHeader from '../navigation/Navbar';
+import Footer from '../navigation/footer';
 //import './PageLayout.css'; // Or your preferred styling
 
 function PageLayout({ children }) {
@@ -9,6 +10,7 @@ function PageLayout({ children }) {
       <main className="main-content">
         {children}
       </main>
+      <Footer/>
     </div>
   );
 }
